@@ -11,8 +11,12 @@
   },
   "dependencies": {
     "@3rdweb/hooks": "^1.9.2",
+    "@thirdweb-dev/react": "^4.9.4",
+    "@thirdweb-dev/sdk": "^4.0.99",
+    "ethers": "^5.7.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
     "thirdweb": "^5.55.0"
   },
   "devDependencies": {

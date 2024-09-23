@@ -1,8 +1,7 @@
-
-import { Wallet } from '../pages/Wallet';
+import { Link } from 'react-router-dom';
+import {Wallet} from '../pages/Wallet';
 import '/src/index.css';
-// import { WalletButton } from '../pages/Wallet';
-// import { useState } from 'react';
+// import {ConnectWallet} from "@thirdweb-dev/react";
 
 const Navbar=()=>{
 
@@ -28,27 +27,27 @@ const Navbar=()=>{
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-        <li><a>About</a></li>
+        <li><Link to={"/about"}>About</Link></li>
  
-        <li><a>Give a Tip</a></li>
+        <li><Link to={"/tip"}>Give a Tip</Link></li>
       </ul>
     </div>
-    <a className="btn btn-ghost">
+    <Link to={"/"} className="btn btn-ghost">
         <img src="/src/assets/tiptank_logo.png" className="h-[70%]"></img>
-    </a>
+    </Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a className="font-bold transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:btn-ghost duration-300">About</a></li>
+      <li><Link className="font-bold transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:btn-ghost duration-300" to={''}>About</Link></li>
 
-      <li><a className="font-bold transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:btn-ghost duration-300">Give a Tip</a></li>
+      <li><Link className="font-bold transition ease-in-out delay-200 hover:-translate-y-1 hover:scale-110 hover:btn-ghost duration-300" to={'/tip'}>Give a Tip</Link></li>
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn rounded-2xl border-none bg-black text-[#A8FF35] transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:btn-ghost duration-300"><Wallet/></a>
+    <Wallet/>
   </div>
 </div>
         </>
     )
   };
-export default Navbar;
+export default Navbar
