@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #A8FF35;
+  --foreground: black;
+  cursor:url('../app/assets/arrowhead-rounded-outline.png'),auto;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,14 +20,78 @@
   }
 }
 
+.league-spartan {
+  font-family: var(--font-league_spartan);
+}
+
+
 body {
+  /* min-height: 100vh; */
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "League Spartan", sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  /* margin-top: calc(var(--nav-height) + 1rem); */
+  background-image: url('../app/assets/confetti-doodles.png');
+  
 }
+.scrollToTopButton{
+  position: fixed;
+  right: 3%;
+  bottom: 0%;
+  z-index: 1000;
+  padding: 1%;
+  background-color: black;
+  color:#A8FF35;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+ filter: progid: dximagetransform.microsoft.basicimage(rotation=3);
+  text-align: center;
+  text-decoration: none;
+  animation-duration: 5s;
+}
+/* .scrollToTopButton.visible{
+  opacity: 1;
+} */
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+} 
+.gg-arrow-up-r {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  transform: scale(var(--ggs, 1));
+  border-radius: 4px;
 }
+.gg-arrow-up-r::after,
+.gg-arrow-up-r::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 4px;
+}
+.gg-arrow-up-r::after {
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(45deg);
+  left: 6px;
+}
+.gg-arrow-up-r::before {
+  width: 2px;
+  height: 10px;
+  left: 8px;
+  background: currentColor;
+}
+
+

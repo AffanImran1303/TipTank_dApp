@@ -12,8 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    },
+      fontFamily:{
+        league_spartan:['var(--font-league_spartan)']
+      }
+    }
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui:{
+    base:false
+  }
 };
 export default config;
