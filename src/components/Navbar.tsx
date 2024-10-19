@@ -2,6 +2,7 @@
 import "../app/globals.css";
 import Link from 'next/link';
 import React from 'react';
+import ConnectWallet from "./ConnectButton";
 
 const Navbar = () => {
   const scrollToAbout=(AboutId:string)=>{
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <>
     <div className="flex justify-center">
-        <div className="navbar w-5/6 border-black border-2 rounded rounded-xl mt-6">
+        <div className="navbar w-5/6 border-[#0c4727] border-1 rounded rounded-xl mt-6">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,7 +53,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn btn-ghost bg-black border-0 text-white">Connect</a>
+    <ConnectWallet/>
+
   </div>
 </div>
 </div>

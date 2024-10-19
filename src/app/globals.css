@@ -8,8 +8,8 @@ html{
 }
 
 :root {
-  --background: #A8FF35;
-  --foreground: black;
+  --background: #e4e3dc;
+  --foreground: #0c4727;
   cursor:url('../app/assets/arrowhead-rounded-outline.png'),auto;
 }
 
@@ -32,7 +32,8 @@ body {
   font-family: "League Spartan", sans-serif;
   /* font-family: Arial, Helvetica, sans-serif; */
   /* margin-top: calc(var(--nav-height) + 1rem); */
-  background-image: url('../app/assets/confetti-doodles.png');
+  /* background-image: url('../app/assets/confetti-doodles.png'); */
+  background-image: url('./../app/assets/bbburst.svg');
   
 }
 .scrollToTopButton{
@@ -41,8 +42,8 @@ body {
   bottom: 0%;
   z-index: 1000;
   padding: 1%;
-  background-color: black;
-  color:#A8FF35;
+  background-color: #0c4727;
+  color:#e4e3dc;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);
@@ -93,5 +94,18 @@ body {
   left: 8px;
   background: currentColor;
 }
+.buttonHover:hover{
+  background-color: #0c4727;
+  transition-delay: 2s;
+  transition-timing-function: ease-in;
+}
+.container{
+  background-color: #0c4727;
+  color: #e4e3dc;
+}
+.timeline-icon{
+  background-color: #0c4727;
+}
+.vertical-line{
 
-
+}

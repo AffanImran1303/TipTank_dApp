@@ -7,6 +7,7 @@ import About from "./about/page";
 import HowItWorks from "./howitworks/page";
 import FeaturedCreators from "./featuredcreators/page";
 import FAQ from "./FAQ/page";
+import GiveATipButton from "@/components/GiveATipButton";
 export default function Home() {
   return (
     <>
@@ -24,9 +25,10 @@ export default function Home() {
                   Decentralized Tipping.
                 </p>
                 <div className="flex justify-center mt-8">
-                  <a className="btn btn-ghost bg-black border-0 text-white w-64">
+                  <GiveATipButton/>
+                  {/* <a className="btn btn-ghost bg-[#16794b] border-0 text-white w-64 transition ease-in-out delay-450 hover:bg-[#0c4727] hover:scale-110">
                     Give A Tip
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

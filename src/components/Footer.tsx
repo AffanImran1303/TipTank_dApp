@@ -3,10 +3,10 @@ export const Footer=()=>{
         <>
         <div className="flex justify-center">
         <div className="w-5/6 mb-2">
-            <section className="w-full bg-black mt-72 text-white rounded-3xl border-none border-2">
-            <footer className="footer flex justify-between text-slate-400 p-7">
+            <section className="w-full bg-[#0c4727] mt-72 rounded-3xl border-none border-2">
+            <footer className="footer flex justify-between text-[#e4e3dc] p-7">
   <aside className="flex flex-col sm:flex items-center">
-  <a className="btn btn-ghost p-0 text-4xl league-spartan text-[#A8FF35]">tiptank</a>
+  <a className="btn btn-ghost p-0 text-4xl league-spartan text-[#e4e3dc]">tiptank</a>
   <p>© 2024. All Rights Reserved.</p>
   </aside>
   <div className="flex flex-row sm:flex inline-block">
