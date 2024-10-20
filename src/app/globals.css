@@ -42,7 +42,7 @@ body {
   bottom: 0%;
   z-index: 1000;
   padding: 1%;
-  background-color: #0c4727;
+  background-color: #16794b;
   color:#e4e3dc;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
@@ -100,12 +100,9 @@ body {
   transition-timing-function: ease-in;
 }
 .container{
-  background-color: #0c4727;
+  background-color:#16794b;
   color: #e4e3dc;
 }
 .timeline-icon{
-  background-color: #0c4727;
-}
-.vertical-line{
-
+  background-color: #16794b;
 }

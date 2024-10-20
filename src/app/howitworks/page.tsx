@@ -21,7 +21,7 @@ const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full timeline-icon border-white border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full timeline-icon border-[#e4e3dc] border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
@@ -29,9 +29,9 @@ const HowItWorks = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#e4e3dc"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-wallet"
                     >
                       <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
@@ -49,7 +49,7 @@ const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full timeline-icon border-white border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full timeline-icon border-[#e4e3dc] border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
@@ -57,9 +57,9 @@ const HowItWorks = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#e4e3dc"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-user-round-search"
                     >
                       <circle cx="10" cy="8" r="5" />
@@ -79,7 +79,7 @@ const HowItWorks = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="rounded-full timeline-icon border-white border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <div className="rounded-full timeline-icon border-[#e4e3dc] border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
@@ -87,9 +87,9 @@ const HowItWorks = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#e4e3dc"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-bitcoin"
                     >
                       <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727" />
@@ -107,7 +107,7 @@ const HowItWorks = () => {
                     </div>
                   </div>
                 </div>
-                <div className="rounded-full timeline-icon border-white border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                <div className="rounded-full timeline-icon border-[#e4e3dc] border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="50"
@@ -115,9 +115,9 @@ const HowItWorks = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#e4e3dc"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                     className="lucide lucide-check"
                   >
                     <path d="M20 6 9 17l-5-5" />
