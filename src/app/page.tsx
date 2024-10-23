@@ -11,11 +11,8 @@ import GiveATipButton from "@/components/GiveATipButton";
 export default function Home() {
   return (
     <>
-      <div className="flex justify-center">
-        <div className="">
-          <section className="m-20 sm:h-max mt-40">
-            <div className="flex justify-center">
-              <div className="">
+          <section className="flex flex-col items-center justify-center h-screen sm:h-screen">
+            <img src='./images/circle-scatter-haikei1.svg' className="absolute opacity-20"></img>
                 <p className="text-6xl font-bold text-center sm:text-7xl mb-3 league-spartan text-center tracking-tight md:text-8xl mb-3 league-spartan text-center tracking-tight">
                   Your Rewards,
                   <br /> Their Motivation
@@ -30,11 +27,7 @@ export default function Home() {
                     Give A Tip
                   </a> */}
                 </div>
-              </div>
-            </div>
           </section>
-        </div>
-      </div>
       <About/>
       <HowItWorks/>
       <FeaturedCreators/>

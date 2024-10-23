@@ -1,3 +1,4 @@
+import path from "path";
 import React from "react";
 
 const HowItWorks = () => {
@@ -8,7 +9,98 @@ const HowItWorks = () => {
           How It Works?
         </h1>
         <p className="league-spartan text-lg mt-3">Simple 3 steps to support your favourite creator passion!</p>
-        <div className="mt-5 py-6 flex flex-col justify-center sm:py-12 league-spartan font-semibold text-lg">
+        <div className="flex justify-center mt-10 text-xl">
+        <ul className="timeline">
+  <li>
+    <div className="flex justify-center items-center timeline-start timeline-box bg-[#16794b] text-[#ece5ea]">
+    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="40"
+                      height="40"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#e4e3dc"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="lucide lucide-wallet"
+                    >
+                      <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
+                      <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
+                    </svg>
+                    <p className="p-4">Connect your Wallet</p>
+      </div>
+    <div className="timeline-middle">
+      <div className="bg-[#16583c] w-12 h-12 rounded-full text-white content-center">1
+      </div>
+      {/* <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="#16583c"
+        className="text-primary h-10 w-10">
+        <path
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />1
+      </svg> */}
+    </div>
+    <hr className="bg-[#16794b]" />
+  </li>
+  <li>
+    <hr className="bg-[#16794b]" />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="#16583c"
+        className="text-primary h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end timeline-box bg-[#16794b] text-[#ece5ea]">Search your Favourite Creator</div>
+    <hr className="bg-[#16794b]" />
+  </li>
+  <li>
+    <hr className="bg-[#16794b]" />
+    <div className="timeline-start timeline-box bg-[#16794b] text-[#ece5ea]">Enter the Tip Amount</div>
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="#16583c"
+        className="text-primary h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <hr className="bg-[#16794b]" />
+  </li>
+  <li>
+  <hr className="bg-[#16794b]" />
+    <div className="timeline-middle">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20"
+        fill="#16583c"
+        className="h-5 w-5">
+        <path
+          fillRule="evenodd"
+          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+          clipRule="evenodd" />
+      </svg>
+    </div>
+    <div className="timeline-end timeline-box bg-[#16794b] text-[#ece5ea]">You are done!</div>
+    {/* <hr className="bg-[#16794b]" /> */}
+  </li>
+</ul>
+        </div>
+        
+        
+        {/* <div className="mt-5 py-6 flex flex-col justify-center sm:py-12 league-spartan font-semibold text-lg">
           <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
             <div className="relative text-gray-700 antialiased text-sm font-semibold">
               <div className="hidden sm:block w-1 bg-[#16794b] absolute h-[600px] left-1/2 transform -translate-x-1/2"></div>
@@ -126,7 +218,7 @@ const HowItWorks = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
