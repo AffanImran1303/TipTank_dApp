@@ -32,11 +32,11 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-black text-white rounded-box z-[1] mt-3 w-52 p-4 shadow">
- <Link href="/about">About</Link>
-      <Link href="/howitworks">How it Works?</Link>
-      <Link href="/featuredcreators">Featured Creators</Link>
-      <Link href="/FAQ">FAQ</Link>
+        className="menu menu-sm dropdown-content bg-[#16583c] text-white rounded-box z-[1] mt-3 w-52 p-4 shadow">
+ <Link href="#AboutSection">About</Link>
+      <Link href="#HowItWorksSection">How it Works?</Link>
+      <Link href="#FeaturedCreatorsSection">Featured Creators</Link>
+      <Link href="#FAQSection">FAQ</Link>
       </ul>
     </div>
     <Link href="/" className="sm: btn btn-ghost text-3xl league-spartan">tiptank</Link>

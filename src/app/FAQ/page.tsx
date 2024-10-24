@@ -8,7 +8,7 @@ const FAQ = () => {
           Frequently Asked Questions.
         </h1>
         <div className="flex justify-center">
-          <div className="collapse collapse-arrow w-3/4 bg-[#e4e3dc] mt-8 text-[#16794b] border-4 border-[#16794b] league-spartan">
+          <div className="collapse collapse-arrow w-80 bg-[#e4e3dc] mt-8 text-[#16794b] border-4 border-[#16794b] league-spartan sm:w-full">
             <input type="checkbox" />
             <div className="collapse-title text-xl font-medium">
               Click me to show/hide content
@@ -19,7 +19,7 @@ const FAQ = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="collapse collapse-arrow w-3/4 mt-8 bg-[#16794b] league-spartan text-[#e4e3dc]">
+          <div className="collapse collapse-arrow w-80 mt-8 bg-[#16794b] league-spartan text-[#e4e3dc] sm:w-full">
             <input type="checkbox" />
             <div className="collapse-title text-xl font-medium">
               Click me to show/hide content
@@ -30,7 +30,7 @@ const FAQ = () => {
           </div>
         </div>
         <div className="flex justify-center">
-          <div className="collapse collapse-arrow w-3/4 mt-8 bg-[#16794b] league-spartan text-[#e4e3dc]">
+          <div className="collapse collapse-arrow w-80 mt-8 bg-[#16794b] league-spartan text-[#e4e3dc] sm:w-full">
             <input type="checkbox" />
             <div className="collapse-title text-xl font-medium">
               Click me to show/hide content
