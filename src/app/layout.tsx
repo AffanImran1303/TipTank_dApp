@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
 
       <body
-        className={`${league_spartan.variable} antialiased bg-[#ece5ea]`} 
+        className={`${league_spartan.variable} antialiased bg-[#00302e]`} 
       >
         {/* <Navbar/> */}
         <nav><Navbar/></nav>      

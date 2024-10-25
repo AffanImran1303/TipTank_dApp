@@ -8,8 +8,8 @@ html{
 }
 
 :root {
-  --background: #ece5ea;
-  --foreground: #16583c;
+  --background: #00302e;
+  --foreground: #fffdff;
   cursor:url('/assets/arrowhead-rounded-outline.png'),auto;
 }
 
@@ -45,8 +45,8 @@ body {
   bottom: 0%;
   z-index: 1000;
   padding: 1%;
-  background-color: #16794b;
-  color:#e4e3dc;
+  background-color: #6ead3d;
+  color:#00302e;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -moz-transform: rotate(360deg);

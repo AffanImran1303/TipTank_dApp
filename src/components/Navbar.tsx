@@ -33,20 +33,20 @@ const Navbar = () => {
       <ul
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-[#16583c] text-white rounded-box z-[1] mt-3 w-52 p-4 shadow">
- <Link href="#AboutSection">About</Link>
+ <Link href="#AboutSection" className="hover:text-[#6ead3d]">About</Link>
       <Link href="#HowItWorksSection">How it Works?</Link>
       <Link href="#FeaturedCreatorsSection">Featured Creators</Link>
       <Link href="#FAQSection">FAQ</Link>
       </ul>
     </div>
-    <Link href="/" className="sm: btn btn-ghost text-3xl league-spartan">tiptank</Link>
+    <Link href="/" className="sm: btn btn-ghost text-3xl league-spartan transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">tiptank</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1 font-bold space-x-6">
-      <Link href="#AboutSection">About</Link>
-      <Link href="#HowItWorksSection">How it Works?</Link>
-      <Link href="#FeaturedCreatorsSection">Featured Creators</Link>
-      <Link href="#FAQSection">FAQ</Link>
+    <ul className="menu menu-horizontal px-1 font-bold space-x-8">
+      <Link href="#AboutSection" className="transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">About</Link>
+      <Link href="#HowItWorksSection" className="transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">How it Works?</Link>
+      <Link href="#FeaturedCreatorsSection" className="transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">Featured Creators</Link>
+      <Link href="#FAQSection" className="transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">FAQ</Link>
       {/* <li><a>How it Works?</a></li>
       <li><a>Featured Creators</a></li>
       <li><a>FAQ</a></li> */}

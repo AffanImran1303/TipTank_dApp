@@ -11,13 +11,13 @@ import GiveATipButton from "@/components/GiveATipButton";
 export default function Home() {
   return (
     <>
-          <section className="flex flex-col items-center justify-center w-screen h-screen sm:h-screen">
+          <section className="flex flex-col items-center justify-center h-screen sm:h-screen">
             <img src='./images/circle-scatter-haikei1.svg' className="absolute opacity-20"></img>
-                <p className="text-6xl font-bold text-center tracking-tight sm:text-7xl mb-3 league-spartan text-center tracking-tight md:text-8xl mb-3 league-spartan text-center tracking-tight">
-                  Your Rewards,
+                <p className="text-6xl font-bold text-center tracking-tight sm:text-7xl mb-3 league-spartan text-center tracking-tight md:text-8xl mb-3 league-spartan text-center tracking-tight ">
+                  Your Rewards<span className="text-[#6ead3d]">,</span>
                   <br /> Their Motivation
                 </p>
-                <p className="text-xl text-center mt-5 sm:mt-6 text-2xl font-medium league-spartan">
+                <p className="text-xl text-center mt-5  font-medium league-spartan sm:mt-6 text-2xl md:text-3xl">
                   Empower Creators with TipTank, Revolutionize Rewards with
                   Decentralized Tipping.
                 </p>
