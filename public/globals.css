@@ -119,8 +119,7 @@ body {
       clip-path:inset(0 0 0 0);
     }
 }
-.body-animation{
-  animation:appear linear;
-  animation-timeline: view();
-  animation-range:entry 0% cover 40%;
-}
+
+
+
+  

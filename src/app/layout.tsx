@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import {League_Spartan} from 'next/font/google';
-import "./globals.css";
+import "/public/globals.css";
 import Navbar from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import ToTop from "@/components/toTopButton";

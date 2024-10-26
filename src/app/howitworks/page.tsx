@@ -1,105 +1,83 @@
+import { motion, useAnimation, useInView, useMotionValueEvent, useScroll, useSpring, useTransform } from "framer-motion";
 import path from "path";
-import React from "react";
-
+import React, { useEffect, useRef} from "react";
+import "/public/globals.css";
 const HowItWorks = () => {
+  // const targetRef=useRef(null);
+  // const {scrollYProgress}=useScroll({
+  //   target:targetRef,
+  // });
+  // const x = useTransform(scrollYProgress,[0,1],["-10%","-50%"]);
+  // const {scrollYProgress}=useScroll();
+  // useMotionValueEvent(scrollYProgress,"change",
+  //   (latest)=>{
+  //     console.log(latest);
+  //   }
+  // );
+  // const background=useTransform(
+  //   scrollYProgress,
+  //   [0,1],
+  //   ["#FFFFFF","#6366F1"]
+  // );
+  
+  // const {scrollYProgress}=useScroll();
+  // const draw={
+  //   hidden:{pathLength:0},
+  //   visible:(i: any)=>{
+  //     const delay=i;
+  //     return{
+  //       pathLength:1,
+  //       transition:{
+  //         pathLength:{delay,type:"spring",duration:3.5,bounce:0},
+  //       },
+  //     };
+  //   },
+  // };
   return (
     <section className="sm:h-max mt-36" id="HowItWorksSection">
-      <div className="h-vh border-4 border-none rounded-xl text-center p-20 m-10">
+      {/* <div className="bg-slate-500 h-screen">1</div>
+      <div className="bg-yellow-500 h-screen">2</div>
+      <div className="bg-pink-500 h-screen">3</div> */}
+      <div className="h-screen border-4 border-none rounded-xl text-center p-20 m-10">
         <h1 className="text-6xl league-spartan font-bold mt-4">
           How It Works?
         </h1>
-        <p className="league-spartan text-lg mt-3">Simple 3 steps to support your favourite creator passion!</p>
-        {/* <div className="flex justify-center mt-10 text-xl">
-        <ul className="timeline-horizontal sm:timeline">
-  <li>
-    <div className="flex justify-center items-center w-full timeline-start timeline-box bg-[#16794b] text-[#ece5ea]">
-    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="40"
-                      height="40"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#e4e3dc"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-wallet"
-                    >
-                      <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
-                      <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
-                    </svg>
-                    <p className="p-4">Connect your Wallet</p>
-      </div>
-    <div className="timeline-middle">
-      <div className="bg-[#16583c] w-12 h-12 rounded-full text-white content-center">1
-      </div>
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="#16583c"
-        className="text-primary h-10 w-10">
-        <path
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />1
-      </svg> */}
-    {/* </div>
-    <hr className="bg-[#16794b]" />
-  </li>
-  <li>
-    <hr className="bg-[#16794b]" />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="#16583c"
-        className="text-primary h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-end timeline-box bg-[#16794b] text-[#ece5ea]">Search your Favourite Creator</div>
-    <hr className="bg-[#16794b]" />
-  </li>
-  <li>
-    <hr className="bg-[#16794b]" />
-    <div className="timeline-start timeline-box bg-[#16794b] text-[#ece5ea]">Enter the Tip Amount</div>
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="#16583c"
-        className="text-primary h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <hr className="bg-[#16794b]" />
-  </li>
-  <li>
-  <hr className="bg-[#16794b]" />
-    <div className="timeline-middle">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 20 20"
-        fill="#16583c"
-        className="h-5 w-5">
-        <path
-          fillRule="evenodd"
-          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-          clipRule="evenodd" />
-      </svg>
-    </div>
-    <div className="timeline-end timeline-box bg-[#16794b] text-[#ece5ea]">You are done!</div>
-    {/* <hr className="bg-[#16794b]" /> */}
-  {/* </li>
-</ul>
-        </div>
-         */} 
         
+        <p className="league-spartan text-lg mt-3">Simple 3 steps to support your favourite creator passion!</p>
+<div className="sticky top-0 flex h-screen items-center overflow-hidden">
+        <motion.div
+          // className="flex top-1/2 left-1/2 h-screen w-4 bg-blue-500"
+        />
+        </div>
+          {/* <motion.svg
+            width="600"
+            height="600"
+            viewBox="0 0 200 600"
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.path
+            fill="none"
+            d=""
+            />
+          <motion.line
+          stroke="green"
+          strokeWidth={3}
+          x1="90"
+          x2="90"
+          y1="0"
+          y2="360"
+          variants={draw}
+          custom={1}
+          >
+
+          </motion.line>
+          </motion.svg> */}
+        {/* <div className="bg-slate-500 h-screen">1</div>
+        <div className="bg-pink-500 h-screen">2</div>
+        <div className="bg-yellow-500 h-screen">3</div> */}
+        {/* </div> */}
+{/* 
         <div className="mt-5 py-6 flex flex-col justify-center sm:py-12 league-spartan font-semibold text-lg">
           <div className="py-3 sm:max-w-xl sm:mx-auto w-full px-2 sm:px-0">
             <div className="relative text-gray-700 antialiased text-sm font-semibold">
@@ -218,7 +196,7 @@ const HowItWorks = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 'use client';
-import "../app/globals.css";
+import "/public/globals.css";
 import Link from 'next/link';
 import React from 'react';
 import ConnectWallet from "./ConnectButton";
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
     <div className="flex justify-center">
-        <div className="navbar w-5/6 border-[#0c4727] border-1 rounded rounded-xl mt-6">
+        <div className="navbar sm:w-5/6 border-[#0c4727] border-1 rounded rounded-xl mt-6">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,7 +39,7 @@ const Navbar = () => {
       <Link href="#FAQSection">FAQ</Link>
       </ul>
     </div>
-    <Link href="/" className="sm: btn btn-ghost text-3xl league-spartan transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">tiptank</Link>
+    <Link href="/" className="text-xl font-semibold sm:text-3xl league-spartan transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">tiptank</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 font-bold space-x-8">

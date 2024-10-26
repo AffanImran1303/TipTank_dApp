@@ -1,5 +1,5 @@
 'use client'
-import "./../app/globals.css";
+import "/public/globals.css";
 import { useEffect, useState } from "react";
 const ToTop=()=>{
 
