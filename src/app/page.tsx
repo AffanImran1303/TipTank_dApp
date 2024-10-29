@@ -18,7 +18,7 @@ export default function Home() {
           src="./images/circle-scatter-haikei1.svg"
           className="absolute opacity-20"
         ></img>
-        <div className="grid grid-rows-1 gap-12 place-content-between">
+        <div className="z-10 grid grid-rows-1 gap-12 place-content-between">
           <motion.div
             initial={{ opacity: 0, translateY: "-100%" }}
             whileInView={{ opacity: 1, translateY: 0 }}
@@ -34,7 +34,7 @@ export default function Home() {
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 1.25 }}
           >
-            <p className="text-xl text-center font-medium league-spartan sm:text-2xl md:text-3xl">
+            <p className="text-xl text-center font-medium league-spartan sm:text-2xl md:text-2xl">
               Empower Creators with TipTank, Revolutionize Rewards with
               Decentralized Tipping.
             </p>
