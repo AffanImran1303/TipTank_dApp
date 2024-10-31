@@ -26,19 +26,12 @@ html{
 
 
 body {
-  /* min-height: 100vh; */
   color: var(--foreground);
   background: var(--background);
   font-family: "League Spartan", sans-serif;
-  /* font-family: Arial, Helvetica, sans-serif; */
-  /* margin-top: calc(var(--nav-height) + 1rem); */
-  /* background-image: url('./../app/assets/dddepth-114.jpg'); */
-  /* background-image: url('./../app/assets/bbburst.svg'); */
-  
+  overflow-x: hidden;
 }
-/* .body-bg{
-  background-image:url('./../app/assets/dddepth-114.jpg');
-  /* background-repeat: none; */
+
 .scrollToTopButton{
   position: fixed;
   right: 3%;
@@ -56,9 +49,6 @@ body {
   text-decoration: none;
   animation-duration: 5s;
 }
-/* .scrollToTopButton.visible{
-  opacity: 1;
-} */
 
 @layer utilities {
   .text-balance {
@@ -119,41 +109,36 @@ body {
       clip-path:inset(0 0 0 0);
     }
 }
-
-.slider {
-  width: 90%;
-  max-width: 1536px;
-  margin-inline: auto;
-  position: relative;
-  height: 350px;
-  margin-top: 5rem;
+.marquee {
+  /* border: 2px solid black; */
+  /* display: flex; */
   overflow: hidden;
-  mask-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0),
-    rgba(0, 0, 0, 1) 20%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0)
-  );
+  white-space: nowrap;
+  width: 100%;
+}
+.marquee-slider {
+  overflow-x:hidden;
+  display: flex;
+  flex-direction: row;
+  object-fit: cover;
+  gap:2rem;
+  /* padding: 5px; */
+  animation: marquee linear 12s infinite;
 }
 
-@keyframes scrollLeft {
+.marquee-card{
+  object-fit: cover;
+}
+
+.marquee:hover .marquee-slider{
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
   to {
-    left: -200px;
+    transform: translateX(-50%);
   }
 }
-
-.item {
-  position: absolute;
-  left: max(calc(200px * 8), 100%);
-  animation-name: scrollLeft;
-  animation-duration: 30s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.itemAnimation {
-  animation-delay: calc(30s / 8 * (8 - 1) * -1);
-}
-
-  

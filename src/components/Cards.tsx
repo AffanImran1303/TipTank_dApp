@@ -1,5 +1,3 @@
-// import useCryptoIcons from "./CryptoIcons";
-
 interface CardProps{
   image:string;
   text:string;
@@ -10,7 +8,7 @@ interface CardProps{
 const Card:React.FC<CardProps>=({image,text,currencySymbol})=>{
     return(
         <>
-        <div className="relative overflow-hidden rounded-xl">
+        <div className="relative overflow-hidden rounded-xl marquee-card">
 <div className="card grid grid-rows-2 place-content-center items-center p-4 w-48 border-2 border-[#6ead3d] shadow-2xl opacity-60 hover:opacity-100 transition ease-in-out duration-700 hover:-translate-y-1 hover:scale-110 hover:bg-[#6ead3d]">
 
 <div className="avatar">
