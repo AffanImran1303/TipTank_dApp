@@ -56,6 +56,7 @@ const HowItWorks = () => {
               </svg>
             </div>
           </div>
+          <div className="absolute m-10">Connect Wallet</div>
           <div>
             <div className="z-10 rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <svg
@@ -76,6 +77,7 @@ const HowItWorks = () => {
                 <path d="m22 22-1.9-1.9" />
               </svg>{" "}
             </div>
+            <div className="absolute m-8 ml-16">Search your favourite creator</div>
           </div>
           <div>
             <div className="z-10 rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
