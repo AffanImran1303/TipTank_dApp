@@ -56,8 +56,9 @@ const HowItWorks = () => {
               </svg>
             </div>
           </div>
-          <div className="absolute m-10">Connect Wallet</div>
+          <p className="absolute mt-8 text-lg">1. Connect Wallet</p>
           <div>
+            
             <div className="z-10 rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -76,10 +77,12 @@ const HowItWorks = () => {
                 <circle cx="18" cy="18" r="3" />
                 <path d="m22 22-1.9-1.9" />
               </svg>{" "}
+              
             </div>
-            <div className="absolute m-8 ml-16">Search your favourite creator</div>
+            <p className="absolute mt-8 ml-16 text-lg">2. Search your favourite creator</p>
           </div>
           <div>
+          <div className="absolute left-20 mt-8 text-lg">3. Enter the Tip Amount</div>
             <div className="z-10 rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +98,6 @@ const HowItWorks = () => {
               >
                 <path d="M11.767 19.089c4.924.868 6.14-6.025 1.216-6.894m-1.216 6.894L5.86 18.047m5.908 1.042-.347 1.97m1.563-8.864c4.924.869 6.14-6.025 1.215-6.893m-1.215 6.893-3.94-.694m5.155-6.2L8.29 4.26m5.908 1.042.348-1.97M7.48 20.364l3.126-17.727" />
               </svg>
-              {""}
             </div>
           </div>
           <div>
@@ -115,6 +117,7 @@ const HowItWorks = () => {
                 <path d="M20 6 9 17l-5-5" />
               </svg>
             </div>
+            <div className="absolute m-8 ml-16 text-lg">All set, you are done!</div>
           </div>
         </div>
       </div>
