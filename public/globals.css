@@ -55,7 +55,7 @@ body {
     text-wrap: balance;
   }
 } 
-.gg-arrow-up-r {
+/* .gg-arrow-up-r {
   box-sizing: border-box;
   position: relative;
   display: block;
@@ -86,7 +86,7 @@ body {
   height: 10px;
   left: 8px;
   background: currentColor;
-}
+} */
 .buttonHover:hover{
   background-color: #0c4727;
   transition-delay: 2s;
@@ -101,6 +101,10 @@ body {
 }
 .timeline-icon:hover{
   background-color: #6ead3d;
+  transition: ease-in-out 0.5s;
+}
+.lucide:hover{
+  stroke:#00302e;
 }
   @keyframes appear {
     from{
@@ -113,8 +117,6 @@ body {
     }
 }
 .marquee {
-  /* border: 2px solid black; */
-  /* display: flex; */
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
@@ -125,7 +127,6 @@ body {
   flex-direction: row;
   object-fit: cover;
   gap:2rem;
-  /* padding: 5px; */
   animation: marquee linear 12s infinite;
 }
 

@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "/public/globals.css";
 const HowItWorks = () => {
   const ref = useRef(null);
@@ -126,34 +126,3 @@ const HowItWorks = () => {
 };
 
 export default HowItWorks;
-
-  /* 
-    <div className="mt-6 sm:mt-32">
-              <div className="flex flex-col sm:flex-row items-center">
-                <div className="flex justify-end w-full mx-auto items-center">
-                  <div className="w-full sm:w-1/2 sm:pl-8">
-                    <div className="p-4 container rounded shadow">
-                      All set, you are done!
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-full timeline-icon border-[#e4e3dc] border-4 w-28 h-28 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="50"
-                    height="50"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="#e4e3dc"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-check"
-                  >
-                    <path d="M20 6 9 17l-5-5" />
-                  </svg>
-                </div>
-              </div>
-            </div> */
-
-
