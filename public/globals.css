@@ -127,7 +127,7 @@ body {
   flex-direction: row;
   object-fit: cover;
   gap:2rem;
-  animation: marquee linear 12s infinite;
+  animation: marquee linear 50s infinite;
 }
 
 .marquee-card{
@@ -145,4 +145,7 @@ body {
   to {
     transform: translateX(-50%);
   }
+}
+.about-image:hover{
+  background-color: #6ead3d;
 }
