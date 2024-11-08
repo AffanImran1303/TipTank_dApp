@@ -24,7 +24,7 @@ export default function Home() {
             whileInView={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 1.25 }}
           >
-            <p className="text-6xl font-bold text-center tracking-tight sm:text-7xl league-spartan text-center tracking-tight md:text-8xl league-spartan text-center tracking-tight ">
+            <p className="text-6xl font-bold text-center tracking-tight transition ease-in-out hover:delay-650 hover:text-[#6ead3d] hover:scale-110 sm:text-7xl league-spartan text-center tracking-tight md:text-8xl league-spartan text-center tracking-tight ">
               Your Rewards<span className="text-[#6ead3d]">,</span>
               <br /> Their Motivation
             </p>

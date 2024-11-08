@@ -2,7 +2,7 @@ import React from 'react'
 
 const FeaturedCreators = () => {
   return (
-    <section className="flex justify-center sm:h-max mt-36" id="FeaturedCreatorsSection">
+    <section className="flex justify-center sm:h-max" id="FeaturedCreatorsSection">
     <div className="h-vh border-4 border-none rounded-xl text-center p-20 m-10">
       <h1 className="text-5xl league-spartan font-bold mt-4 sm:text-8xl">Featured Creators</h1>
       <div className="text-lg league-spartan">

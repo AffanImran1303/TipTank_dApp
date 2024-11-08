@@ -3,9 +3,14 @@ import "/public/globals.css";
 
 const About = () => {
   return (
-    <section className="league-spartan sm:h-max mt-56" id="AboutSection">
+    <section className="league-spartan hover:text-sky-400 sm:h-max mt-56" id="AboutSection">
+      <img
+          src="./images/wave-haikei.svg"
+          className="absolute opacity-20"
+        ></img>
       <div className="h-vh grid grid-rows-1 gap-20 place-content-evenly text-[#fffdff] text-center p-20">
-        <h1 className="grid-row text-5xl league-spartan font-bold sm:text-7xl">About TipTank</h1>
+      
+        <p className="grid-row text-5xl league-spartan font-bold transition ease-in-out hover:delay-650 hover:text-[#6ead3d] hover:scale-110 sm:text-7xl ">About TipTank</p>
         <div className="text-xl leading-loose z-10  pl-80 pr-80 font-light">
       <p className="relative">TipTank, your platform for directly supporting the creators you admire! Our mission is to empower artists, writers, musicians, educators, and other creatives by providing a seamless way for fans to show appreciation for their work through tips and contributions.</p>
 
