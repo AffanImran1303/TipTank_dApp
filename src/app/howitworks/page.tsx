@@ -29,6 +29,10 @@ const HowItWorks = () => {
       ref={ref}
       id="HowItWorksSection"
     >
+            <img
+          src="./images/wave-haikei1.svg"
+          className="absolute opacity-10"
+        ></img>
       <div className="h-screen border-4 border-none rounded-xl text-center m-10">
 
         <h1 className="text-7xl league-spartan font-bold mt-4">
