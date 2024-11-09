@@ -16,7 +16,7 @@ const HowItWorks = () => {
   const step1Color = useTransform(scrollYProgress, [0.25,0.45], ["", "#6ead3d"]);
   const step2Color = useTransform(scrollYProgress, [0.35,0.75], ["", "#6ead3d"]);
   const step3Color = useTransform(scrollYProgress, [0.65,1], ["", "#6ead3d"]);
-  const step4Color = useTransform(scrollYProgress, [0.8,1], ["", "#6ead3d"]);
+  const step4Color = useTransform(scrollYProgress, [0.82,1], ["", "#6ead3d"]);
 
   const iconStrokeColor1 = useTransform(scrollYProgress, [0.25, 0.45], ["#e4e3dc", "#00302e"]);
   const iconStrokeColor2 = useTransform(scrollYProgress, [0, 0.5], ["#e4e3dc", "#00302e"]);
@@ -25,16 +25,12 @@ const HowItWorks = () => {
 
   return (
     <section
-      className="relative w-full mx-auto py-20 sm:h-max mt-36"
+      className="relative w-full py-20 sm:h-max mt-36"
       ref={ref}
       id="HowItWorksSection"
     >
-      
       <div className="h-screen border-4 border-none rounded-xl text-center m-10">
-        <img
-          src="./images/wave-haikei1.svg"
-          className="absolute opacity-20"
-        ></img>
+
         <h1 className="text-7xl league-spartan font-bold mt-4">
           How It Works?
         </h1>
