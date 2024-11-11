@@ -7,11 +7,11 @@ export interface FeaturedCreatorsProps {
   bio: string;
 }
 const FeaturedCreatorsArray:FeaturedCreatorsProps[]=[
-  {image:"/images/featuredcreator1.jpg",name:"Alex",bio:"Alex Alex"},
-  {image:"/images/featuredcreator2.jpg",name:"Sam",bio:"Sam sam"},
-  {image:"/images/featuredcreator3.jpg",name:"Julie",bio:"Julie Julie"},
-  {image:"/images/featuredcreator4.jpg",name:"Julie",bio:"Julie Julie"},
-  {image:"/images/featuredcreator5.jpg",name:"Susan",bio:"Julie Julie"},
+  {image:"/images/featuredcreator1.jpg",name:"Alex",bio:"Creative Director"},
+  {image:"/images/featuredcreator2.jpg",name:"Sam",bio:"Photographer"},
+  {image:"/images/featuredcreator3.jpg",name:"Julie",bio:"Visual Artist"},
+  {image:"/images/featuredcreator4.jpg",name:"Julie",bio:"Illustrator"},
+  {image:"/images/featuredcreator5.jpg",name:"Susan",bio:""},
 
 ]
 const FeaturedCreators:React.FC= ({
@@ -36,8 +36,8 @@ const FeaturedCreators:React.FC= ({
           </p>
         </div>
         <div className="flex justify-center carousel carousel-center rounded-box w-full space-x-4 p-4 mt-8">
-          {[...FeaturedCreatorsArray].map((creator)=>(
-            <FeaturedCreatorCards image={creator.image} name={creator.name} bio={creator.bio}/>
+          {[...FeaturedCreatorsArray].map((creator,idx)=>(
+            <FeaturedCreatorCards key={idx} image={creator.image} name={creator.name} bio={creator.bio}/>
           ))}
         </div>
         {/* <div className="carousel carousel-center bg-neutral rounded-box w-full space-x-4 p-4 mt-8">

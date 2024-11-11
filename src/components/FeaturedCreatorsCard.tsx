@@ -3,18 +3,17 @@ import { FeaturedCreatorsProps } from "@/app/featuredcreators/page";
 const FeaturedCreatorCards:React.FC<FeaturedCreatorsProps>=({image,name,bio})=>{
     return(
         <>
-        <div className="card border-2 border-[#6ead3d]  shadow-xl">
-  <figure>
+        <div className="card border-2 border-[#6ead3d] shadow-xl">
     <img
       src={image}
       alt="Shoes"
-      className="rounded-xl max-h-80 min-w-52"/>
-  </figure>
+      className="rounded-xl max-h-80 min-w-50 p-4 pb-0"/>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{name}</h2>
-    <p>{bio}</p>
+    <p className="text-sm font-regular">{bio}</p>
     <div className="card-actions">
-      <div className="badge badge-outline">Top 5%</div>
+      <div className="badge badge-outline">Trending!</div>
+      <div className="badge badge-outline">Most Tipped!</div>
     </div>
   </div>
 </div>
