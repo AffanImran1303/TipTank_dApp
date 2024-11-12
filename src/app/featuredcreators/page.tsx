@@ -11,7 +11,7 @@ const FeaturedCreatorsArray:FeaturedCreatorsProps[]=[
   {image:"/images/featuredcreator2.jpg",name:"Sam",bio:"Photographer"},
   {image:"/images/featuredcreator3.jpg",name:"Julie",bio:"Visual Artist"},
   {image:"/images/featuredcreator4.jpg",name:"Julie",bio:"Illustrator"},
-  {image:"/images/featuredcreator5.jpg",name:"Susan",bio:""},
+  {image:"/images/featuredcreator5.jpg",name:"Susan",bio:"Designer"},
 
 ]
 const FeaturedCreators:React.FC= ({
@@ -22,20 +22,18 @@ const FeaturedCreators:React.FC= ({
       className="flex justify-center sm:h-max"
       id="FeaturedCreatorsSection"
     >
-      <div className="grid grid-rows-1 gap-8 h-vh border-4 border-none rounded-xl text-center">
+      <div className="grid grid-rows-1 gap-y-4 h-vh border-4 border-none rounded-xl text-center">
         <h1 className="text-5xl league-spartan font-bold mt-16 sm:text-8xl">
           Featured Creators
         </h1>
-        <div className="text-lg league-spartan">
-          <p className="px-40">
+          <p className="text-lg league-spartan px-40">
             Explore our top creators and discover amazing work! From artists and
             writers to musicians and innovators, these featured creators have
             received standout support from the community. Your tips go a long
             way in encouraging and empowering their passion—check out their
             profiles and show your appreciation!
           </p>
-        </div>
-        <div className="flex justify-center carousel carousel-center rounded-box w-full space-x-4 p-4 mt-8">
+        <div className="flex justify-center carousel carousel-center rounded-box w-full space-x-4">
           {[...FeaturedCreatorsArray].map((creator,idx)=>(
             <FeaturedCreatorCards key={idx} image={creator.image} name={creator.name} bio={creator.bio}/>
           ))}
