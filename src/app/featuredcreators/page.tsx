@@ -7,11 +7,11 @@ export interface FeaturedCreatorsProps {
   bio: string;
 }
 const FeaturedCreatorsArray:FeaturedCreatorsProps[]=[
-  {image:"/images/featuredcreator1.jpg",name:"Alex",bio:"Creative Director"},
-  {image:"/images/featuredcreator2.jpg",name:"Sam",bio:"Photographer"},
-  {image:"/images/featuredcreator3.jpg",name:"Julie",bio:"Visual Artist"},
-  {image:"/images/featuredcreator4.jpg",name:"Julie",bio:"Illustrator"},
-  {image:"/images/featuredcreator5.jpg",name:"Susan",bio:"Designer"},
+  {image:"/images/featuredcreator1.jpg",name:"Noah Castillo",bio:"Music Producer"},
+  {image:"/images/featuredcreator2.jpg",name:"Kai Nguyen",bio:"Travel Vlogger"},
+  {image:"/images/featuredcreator3.jpg",name:"Luna Rivera",bio:"Digital Illustrator"},
+  {image:"/images/featuredcreator4.jpg",name:"Sophia Chen",bio:"Tech Educator"},
+  {image:"/images/featuredcreator5.jpg",name:"Amara El-Tayeb",bio:"Fitness Coach"},
 
 ]
 const FeaturedCreators:React.FC= ({

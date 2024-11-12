@@ -15,7 +15,7 @@ const FAQ:React.FC = () => {
     {question:"How many crypto wallets do TipTank support?",answer:"TipTank supports 350+ wallets!"},
   ]
   return (
-    <section className="flex justify-center sm:h-max mt-36" id="FAQSection">
+    <section className="flex justify-center" id="FAQSection">
       <div className="h-vh w-fit text-center p-20 m-10">
         <h1 className="text-5xl league-spartan font-bold mt-4">
           Frequently Asked Questions.

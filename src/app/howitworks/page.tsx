@@ -53,7 +53,7 @@ const HowItWorks = () => {
         </div>
         <div className="grid grid-rows-2 gap-40 place-content-evenly">
           <div>
-            <motion.div style={{backgroundColor:step1Color}} className="rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <motion.div style={{backgroundColor:step1Color}} className="shadow-2xl rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -77,7 +77,7 @@ const HowItWorks = () => {
     
           <div>
             
-            <motion.div style={{backgroundColor:step2Color}} className="z-10 rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <motion.div style={{backgroundColor:step2Color}} className="z-10 shadow-2xl rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -102,7 +102,7 @@ const HowItWorks = () => {
           </div>
           <div>
           
-            <motion.div style={{backgroundColor:step3Color}} className="z-10 rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <motion.div style={{backgroundColor:step3Color}} className="z-10 shadow-2xl rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -122,7 +122,7 @@ const HowItWorks = () => {
             <p className="absolute mt-8 ml-16 text-lg">3. Enter the Tip Amount</p>
           </div>
           <div>
-            <motion.div style={{backgroundColor:step4Color}} className="rounded-full timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <motion.div style={{backgroundColor:step4Color}} className="rounded-full shadow-2xl timeline-icon border-[#6ead3d] border-4 w-24 h-24 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
               <motion.svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
