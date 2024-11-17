@@ -31,6 +31,10 @@ body {
   font-family: "League Spartan", sans-serif;
   overflow-x: hidden;
 }
+.hero-bg{
+  background-image: url("./images/circle-scatter-haikei1.svg");
+  z-index:-1;
+}
 
 .scrollToTopButton{
   position: fixed;

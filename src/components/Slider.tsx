@@ -21,8 +21,8 @@ const Slider:React.FC=()=>{
     ]
     return(
         <>
-        <div className="py-8 marquee">
-            <div className="absolute left-0 flex gap-4 marquee-slider fadeout-horizontal">
+        <div className="py-8 mt-8 marquee z-20">
+            <div className="absolute left-0 flex gap-4 marquee-slider fadeout-horizontal z-20">
                 {[...creators,...creators].map((creator,idx)=>(
                     <Cards image={creator.image} key={idx} text={creator.text} currencySymbol={creator.currencySymbol}/>
                 ))}
