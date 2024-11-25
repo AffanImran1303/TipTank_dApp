@@ -7,15 +7,16 @@ import Slider from "@/components/Slider";
 const Hero = () => {
   return (
     <section
-  className="hero min-h-screen hero-bg">
+  className="hero h-96 w-full md:h-screen"
+  style={{ backgroundImage: 'url("./images/circle-scatter-haikei1.svg")'}}>
   <div className="hero-content text-neutral-content text-center league-spartan z-10">
     <div className="max-w-screen">
-      <h1 className="mb-5 text-6xl p-2 font-bold sm:p-0 sm:text-8xl">Your Rewards<span className="text-[#6ead3d]">,</span><br /> Their Motivation</h1>
-      <p className="mb-5 text-xl">
+      <h1 className="text-5xl font-bold sm:text-6xl md:text-8xl p-2">Your Rewards<span className="text-[#6ead3d]">,</span><br /> Their Motivation</h1>
+      <p className="text-lg p-4 sm:text-2xl">
       Empower Creators with TipTank, Revolutionize Rewards with Decentralized Tipping.
       </p>
       <GiveATipButton />
-      <Slider/>
+      {/* <Slider/> */}
     </div>
   </div>
 

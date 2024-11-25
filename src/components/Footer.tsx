@@ -4,7 +4,7 @@ export const Footer=()=>{
     return(
         <>
         <div className="flex justify-center">
-        <div className="mb-2 w-3/4">
+        <div className="m-4 w-screen">
             <section className="bg-[#6ead3d] mt-72 rounded-3xl border-none border-2">
             <footer className="footer flex justify-between text-[#00302e] p-7">
   <aside className="grid sm:flex flex-col">

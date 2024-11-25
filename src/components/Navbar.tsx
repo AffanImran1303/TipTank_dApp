@@ -39,7 +39,7 @@ const Navbar = () => {
       <Link href="#FAQSection">FAQ</Link>
       </ul>
     </div>
-    <Link href="/" className="text-xl font-semibold sm:text-3xl league-spartan transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">tiptank</Link>
+    <Link href="/" className="text-2xl font-semibold sm:text-3xl league-spartan transition ease-in-out delay-250 hover:-translate-y-1 hover:scale-110 hover:duration-300 hover:text-[#6ead3d]">tiptank</Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1 font-bold space-x-8">

@@ -11,7 +11,7 @@ const FeaturedCreatorCards:React.FC<FeaturedCreatorsProps>=({image,name,bio})=>{
                     src={image}
                     alt="card-image" className="object-cover w-full h-full" />
                     <div className="badge absolute inset-0 bg-[#6ead3d] border-none font-regular flex justify-self-end m-2 shadow-inner">Trending
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-trending-up mx-1"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-trending-up mx-1"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
                     </div>
             </div>
             <div className="p-6">

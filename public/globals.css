@@ -25,6 +25,7 @@ html{
 }
 
 
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -34,6 +35,10 @@ body {
 .hero-bg{
   background-image: url("./images/circle-scatter-haikei1.svg");
   z-index:-1;
+}
+.about-bg{
+  background-image: url("./images/wave-haikei.svg");
+  background-repeat: no-repeat;
 }
 
 .scrollToTopButton{
