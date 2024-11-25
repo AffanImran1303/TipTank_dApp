@@ -2,7 +2,7 @@
 import "/public/globals.css";
 import Link from 'next/link';
 import React from 'react';
-import ConnectWallet from "./ConnectButton";
+import Button from "./Button";
 
 const Navbar = () => {
   const scrollToAbout=(AboutId:string)=>{
@@ -53,7 +53,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <ConnectWallet/>
+    <Button title={"Connect"} icon={'/assets/walleticon.png'}/>
 
   </div>
 </div>

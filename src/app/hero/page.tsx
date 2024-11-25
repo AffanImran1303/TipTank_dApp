@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import "/public/globals.css";
 import GiveATipButton from "@/components/GiveATipButton";
 import Slider from "@/components/Slider";
+import Button from '@/components/Button';
 const Hero = () => {
   return (
     <section
@@ -12,10 +13,12 @@ const Hero = () => {
   <div className="hero-content text-neutral-content text-center league-spartan z-10">
     <div className="max-w-screen">
       <h1 className="text-5xl font-bold sm:text-6xl md:text-8xl p-2">Your Rewards<span className="text-[#6ead3d]">,</span><br /> Their Motivation</h1>
-      <p className="text-lg p-4 sm:text-2xl">
+      <p className="text-lg m-4 sm:text-2xl">
       Empower Creators with TipTank, Revolutionize Rewards with Decentralized Tipping.
       </p>
-      <GiveATipButton />
+      <div className='m-2'>
+      <Button title={'Give A Tip'} icon={'/assets/giveATipicon.png'}/>
+      </div>
       {/* <Slider/> */}
     </div>
   </div>
