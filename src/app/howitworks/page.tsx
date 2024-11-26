@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef } from "react";
 import "/public/globals.css";
 const HowItWorks = () => {
   const ref = useRef(null);
@@ -35,7 +35,7 @@ const HowItWorks = () => {
         ></img>
       <div className="h-screen border-4 border-none rounded-xl text-center m-10">
 
-        <h1 className="text-7xl league-spartan font-bold mt-4">
+        <h1 className="text-4xl league-spartan font-bold mt-4 sm:text-5xl">
           How It Works?
         </h1>
 
