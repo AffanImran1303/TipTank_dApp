@@ -2,15 +2,14 @@ import React from 'react'
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import "/public/globals.css";
-import GiveATipButton from "@/components/GiveATipButton";
 import Slider from "@/components/Slider";
 import Button from '@/components/Button';
 const Hero = () => {
   return (
     <section
-  className="hero h-96 w-full md:h-screen"
+  className="hero h-96 overflow-x-hidden md:h-screen text-[#fffdff]"
   style={{ backgroundImage: 'url("./images/circle-scatter-haikei1.svg")'}}>
-  <div className="hero-content text-neutral-content text-center league-spartan z-10">
+  <div className="hero-content text-center league-spartan z-10">
     <div className="max-w-screen">
       <h1 className="text-5xl font-bold sm:text-6xl md:text-8xl p-2">Your Rewards<span className="text-[#6ead3d]">,</span><br /> Their Motivation</h1>
       <p className="text-lg m-4 sm:text-2xl">
