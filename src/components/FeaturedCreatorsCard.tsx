@@ -3,10 +3,10 @@ import { FeaturedCreatorsProps } from "@/app/featuredcreators/page";
 const FeaturedCreatorCards:React.FC<FeaturedCreatorsProps>=({image,name,bio})=>{
     return(
         <>
-<div className="flex justify-center items-center min-h-screen">
-    <div className="max-w-[620px] mx-auto text-gray-300">
+<div className="flex justify-center mt-8">
+    <div className="w-max mx-auto text-gray-300">
         <div className="relative flex flex-col shadow-2xl bg-clip-border rounded-xl max-w-60 hover:bg-[#6ead3d] hover:text-[#fffdff] hover:opacity-100 transition ease-in-out duration-700 hover:-translate-y-1 hover:scale-110">
-            <div className="relative mx-4 mt-4 overflow-hidden bg-clip-border rounded-xl h-80 shadow-2xl">
+            <div className="relative mx-4 mt-4 overflow-x-hidden bg-clip-border rounded-xl h-80 shadow-2xl">
                 <img
                     src={image}
                     alt="card-image" className="object-cover w-full h-full" />
@@ -29,19 +29,6 @@ const FeaturedCreatorCards:React.FC<FeaturedCreatorsProps>=({image,name,bio})=>{
         </div>
     </div>
 </div>
-{/* <div classNameName="card image-full max-h-96 max-w-52 shadow-xl border-4 hover:opacity-100 transition ease-in-out duration-700 hover:-translate-y-1 hover:scale-110">
-  <figure>
-    <img
-      src={image}
-      alt="Shoes"
-      className="hover:bg-blend-normal"
-      />
-  </figure>
-  <div className="card-body place-self-center place-items-center">
-    <h2 className="card-title">{name}</h2>
-    <p>{bio}</p>
-  </div>
-</div> */}
         </>
     )
 }
