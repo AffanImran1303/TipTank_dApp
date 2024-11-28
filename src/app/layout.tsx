@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import {League_Spartan} from 'next/font/google';
 import "/public/globals.css";
 import Navbar from "@/components/Navbar";
@@ -11,17 +10,6 @@ const league_spartan=League_Spartan({
   weight:['100','400','700','900'],
   variable:'--font-league_spartan',
 })
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
 
 export const metadata: Metadata = {
   title: "TipTank - evolutionize Rewards with Decentralized Tipping",

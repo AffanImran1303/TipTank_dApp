@@ -3,7 +3,7 @@ import "/public/globals.css";
 
 const About = () => {
   return (
-    <section className="league-spartan mt-12 h-max" id="AboutSection">
+    <section className="league-spartan mt-12 h-max" id="about">
       <div className="place-content-evenly text-center text-[#fffdff]">
         <p className="text-4xl league-spartan font-bold transition ease-in-out hover:delay-650 hover:text-[#6ead3d] hover:scale-110 sm:text-5xl md:text-6xl">
           About TipTank

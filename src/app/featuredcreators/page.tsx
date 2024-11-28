@@ -1,25 +1,15 @@
 import FeaturedCreatorCards from "@/components/FeaturedCreatorsCard";
 import React from "react";
+import {FeaturedCreatorsArray} from "@/constants";
 
-export interface FeaturedCreatorsProps {
-  image: string;
-  name: string;
-  bio: string;
-}
-const FeaturedCreatorsArray:FeaturedCreatorsProps[]=[
-  {image:"/images/featuredcreator1.jpg",name:"Noah Castillo",bio:"Music Producer"},
-  {image:"/images/featuredcreator2.jpg",name:"Kai Nguyen",bio:"Travel Vlogger"},
-  {image:"/images/featuredcreator3.jpg",name:"Luna Rivera",bio:"Digital Illustrator"},
-  {image:"/images/featuredcreator4.jpg",name:"Sophia Chen",bio:"Tech Educator"},
 
-]
 const FeaturedCreators:React.FC= ({
 
 }) => {
   return (
     <section
       className="flex justify-center sm:h-max"
-      id="FeaturedCreatorsSection"
+      id="featuredcreators"
     >
       <div className="border-4 border-none rounded-xl text-center">
         <h1 className="text-4xl league-spartan font-bold mt-32 sm:mt-48 text-5xl md:text-6xl">

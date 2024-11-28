@@ -27,7 +27,7 @@ const HowItWorks = () => {
     <section
       className="relative w-full py-20 sm:h-max mt-36"
       ref={ref}
-      id="HowItWorksSection"
+      id="howitworks"
     >
             <img
           src="./images/wave-haikei1.svg"
