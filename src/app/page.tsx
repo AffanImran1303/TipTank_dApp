@@ -14,7 +14,7 @@ export default function Home() {
       <About />
       {/* <HowItWorks /> */}
       <FeaturedCreators />
-      {/* <FAQ /> */}
+      <FAQ />
     </>
   );
 }
